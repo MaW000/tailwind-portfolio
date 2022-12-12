@@ -41,18 +41,19 @@ const DivPar = styled.div(() => [
 ])
 const Projects = () => {
   return (
-    <HeaderDiv>
-        <HeadingDiv>
+    <section className="py-24">
+        <div className="flex items-center mt-2 mb-10 text-lightOrange">
             <h1 className='mr-2.5 '>03.</h1>
-            <HeadingH1>Some Things I've Built</HeadingH1>
-            <HeadingLine/>
-        </HeadingDiv>
+            <h1 className="text-2xl leading-5 text-darkOrange ">Some Things I've Built</h1>
+            <div className="block h-[1px] w-72 bg-lightestnavy ml-5"/>
+        </div>
         <UlProject>
             <LiProject>
                 <DivImage>
-                    <a>
-                        <img src={musicApp} className=''/>
-                    </a>
+                <div className="row-span-full col-start-1 col-end-13 relative opacity-20 hover:ease-in duration-150 hover:opacity-100 ">
+                    <div className="absolute bg-lightOrange w-full h-full rounded-xl hover:hidden"></div>
+                    <img src={musicApp} className='rounded-xl w-50 grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal'/>  
+                </div>
                 </DivImage>
                 <DivContent>
                     <div>
@@ -103,7 +104,7 @@ const Projects = () => {
                 </DivImage>
             </LiProject>
         </UlProject>
-    </HeaderDiv>
+    </section>
   )
 }
 
