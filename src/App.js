@@ -1,8 +1,12 @@
 import tw, { styled } from 'twin.macro'
-import { Header, HeroSection } from './components';
+import { Header, HeroSection, AboutMe, Projects, ProjectsSmall } from './components';
 
 const MainDiv = styled.div(() => [
-  tw``
+  tw`lg:px-40 md:px-20 mx-auto max-w-screen-2xl`
+])
+
+const ProjectDiv = styled.div(() => [
+  tw`px-12 mx-auto max-w-screen-2xl`
 ])
 
 function App() {
@@ -10,8 +14,13 @@ function App() {
     <div className="App">
       <Header />
       <MainDiv>
-      <HeroSection/>
+        <HeroSection/>
+        <AboutMe />
       </MainDiv>
+      <ProjectDiv>
+        <Projects />
+        <ProjectsSmall/>
+      </ProjectDiv>
     </div>
   );
 }

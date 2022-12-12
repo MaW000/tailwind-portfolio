@@ -13,25 +13,24 @@ const NavSec = styled.nav(() => [
 ])
 
 const Button = styled.nav(() => [
-    tw`inline-flex font-mono items-center px-4 py-2 text-base ml-3 text-[#64ffda] bg-transparent rounded focus:outline-none hover:bg-gray-200 md:mt-0 border-[#64ffda] border-[1px]`
+    tw`inline-flex font-mono items-center px-4 py-2 text-base ml-3 text-lightOrange bg-transparent rounded focus:outline-none hover:bg-gray-200 md:mt-0 border-lightOrange border-[1px]`
 ])
 const NavLinks = styled.a(() => [
-    tw`mr-5 hover:text-gray-900 before:content-['1.'] before:text-[#64ffda]`
+    tw`mr-5 hover:text-gray-900 before:content-['1.'] before:text-lightOrange max-w-full`
 ])
 const Header = () => {
     return (
-
-        <header class="text-gray-600 body-font flex justify-between align-center h-24">
+        <header class="text-gray-600 body-font flex justify-between align-center h-24 fixed min-w-full">
             <HeaderDiv >
                 <LogoA href={ '/'}>
-                    <BsOctagon size={45} color="#64ffda" />
-                    <span class="ml-3 text-3xl font-[Proxima Nova] text-[#64ffda] absolute right-[9px] top-1 ">M</span>
+                    <BsOctagon size={45} color="#ffa500" />
+                    <span class="ml-3 text-3xl font-[Proxima Nova] text-lightOrange absolute right-[9px] top-1  ">M</span>
                 </LogoA>
                 <NavSec class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <a href={ '/'} class="mr-5 text-[#CCD6F1] before:content-['1.'] before:text-[#64ffda] hover:text-[#64ffda]"> About</a>
-                    <a href={ '/'} class="mr-5 text-[#CCD6F1] before:content-['2.'] before:text-[#64ffda] hover:text-[#64ffda]"> Experience</a>
-                    <a href={ '/'} class="mr-5 text-[#CCD6F1] before:content-['3.'] before:text-[#64ffda] hover:text-[#64ffda]"> Work</a>
-                    <a href={ '/'} class="mr-5 text-[#CCD6F1] before:content-['4.'] before:text-[#64ffda] hover:text-[#64ffda]"> Contact</a>
+                    <a href={ '/'} class="mr-5 text-[#CCD6F1] before:content-['1.'] before:text-lightOrange hover:text-lightOrange"> About</a>
+                    <a href={ '/'} class="mr-5 text-[#CCD6F1] before:content-['2.'] before:text-lightOrange hover:text-lightOrange"> Experience</a>
+                    <a href={ '/'} class="mr-5 text-[#CCD6F1] before:content-['3.'] before:text-lightOrange hover:text-lightOrange"> Work</a>
+                    <a href={ '/'} class="mr-5 text-[#CCD6F1] before:content-['4.'] before:text-lightOrange hover:text-lightOrange"> Contact</a>
                 </NavSec>
                 <Button>
                     Resume

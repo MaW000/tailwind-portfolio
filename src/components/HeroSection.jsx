@@ -1,72 +1,35 @@
 import React from 'react'
 import tw, { styled } from "twin.macro";
 
-const HeroDiv = styled.div(() => [
-    tw`container mx-1`
+const HeroDiv = styled.section(() => [
+    tw`flex flex-col items-start justify-center min-h-screen mx-auto`
+])
+
+const Button = styled.button(() => [
+  tw`inline-block font-mono py-5 px-7 text-lightOrange bg-transparent mt-12 rounded focus:outline-none hover:bg-darkOrange hover:text-black md:mt-12 border-lightOrange border-[1px]`
 ])
 
 const HeroSection = () => {
   return (
-    <section class="text-gray-600 body-font relative">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+      <HeroDiv>
+        <div class="block">
+          <h1 class="font-mono text-lightOrange text-[14px] mb-5">
             Hi, my name is
           </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify.
-          </p>
         </div>
-        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <div class="flex flex-wrap -m-2">
-            <div class="p-2 w-1/2">
-              <div class="relative">
-                <label for="name" class="leading-7 text-sm text-gray-600">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-            </div>
-            <div class="p-2 w-1/2">
-              <div class="relative">
-                <label for="email" class="leading-7 text-sm text-gray-600">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-            </div>
-            <div class="p-2 w-full">
-              <div class="relative">
-                <label for="message" class="leading-7 text-sm text-gray-600">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                ></textarea>
-              </div>
-            </div>
-            <div class="p-2 w-full">
-              <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Button
-              </button>
-            </div>
-          </div>
+        <div class=" block">
+          <h2 className='text-[50px] font-semibold text-lightOrange'>Matthew Wardlow.</h2>
         </div>
-      </div>
-    </section>
+        <div class="block">
+          <h3 className='text-slate mt-[10px] text-[50px]'>I build things for the web</h3>
+        </div>
+        <div>
+          <p className='max-w-xl mt-3 font-sans text-slate'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on finding my first fulltime role.</p>
+        </div>
+        <div>
+          <Button> Check out my Github!</Button>
+        </div>
+      </HeroDiv>
   );
 };
 

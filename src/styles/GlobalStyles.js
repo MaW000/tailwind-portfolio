@@ -6,7 +6,7 @@ const CustomStyles = createGlobalStyle`
   body {
     -webkit-tap-highlight-color: ${theme`colors.purple.500`};
     ${tw`antialiased`}
-    background-color: #0a192f;
+    background-color:  #301008;
   }
 `
 
